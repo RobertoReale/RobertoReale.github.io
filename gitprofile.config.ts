@@ -69,7 +69,7 @@ const CONFIG = {
     udemy: '',
     dribbble: '',
     behance: '',
-    medium: 'Roberto Reale',
+    medium: 'robertoreale',
     dev: '',
     stackoverflow: '',
     skype: '',
