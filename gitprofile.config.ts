@@ -28,29 +28,7 @@ const CONFIG = {
         projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
-    external: {
-      header: '',
-      // To hide the `External Projects` section, keep it empty.
-      projects: [
-        {
-          title: '',
-          description:
-            '',
-          imageUrl:
-            '',
-          link: '',
-        },
-        {
-          title: 'Project Name',
-          description:
-            '',
-          imageUrl:
-            '',
-          link: '',
-        },
-      ],
-    },
-  },
+    external: {},
   seo: {
     title: 'Portfolio of Roberto Reale',
     description: '',
