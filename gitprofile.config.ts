@@ -53,7 +53,7 @@ const CONFIG = {
     dribbble: '',
     behance: '',
     medium: 'robertoreale',
-    dev: '',
+    dev: 'roberto_reale',
     stackoverflow: '',
     skype: '',
     telegram: '',
@@ -136,7 +136,7 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'medium', // medium | dev
+    source: 'dev', // medium | dev
     username: 'robertoreale', // to hide blog section, keep it empty
     limit: 1, // How many articles to display. Max is 10.
   },
