@@ -41,7 +41,7 @@ const CONFIG = {
           link: '',
         },
         {
-          title: 'Project Name',
+          title: '',
           description:
             '',
           imageUrl:
