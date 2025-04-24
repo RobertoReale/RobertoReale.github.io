@@ -96,10 +96,22 @@ const CONFIG = {
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'EF SET Certificate (C1 Advanced)',
+      body: 'EF Standard English Test (EF SET)',
+      year: 'January 2024',
+      link: 'https://cert.efset.org/LUvhTT',
+    },
+    {
+      name: 'Introduction to IoT',
+      body: 'Cisco Networking Academy',
+      year: 'November 2023',
+      link: '',
+    },
+    {
+      name: 'Udemy - LPI Linux Essentials',
+      body: 'Udemy',
+      year: 'July 2021',
+      link: 'https://www.udemy.com/certificate/UC-3345de27-9a75-4832-bbd5-692fb4192f50/',
     },
   ],
   educations: [
@@ -143,7 +155,7 @@ const CONFIG = {
     limit: 1, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: 'G-6HQ9BK2K1K', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
@@ -155,14 +167,14 @@ const CONFIG = {
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
 
     // Display the ring in Profile picture
-    displayAvatarRing: true,
+    displayAvatarRing: false,
 
     // Available themes. To remove any theme, exclude from here.
     themes: [
