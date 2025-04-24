@@ -57,7 +57,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'Roberto Reale',
+    linkedin: 'roberto-reale',
     x: '',
     mastodon: '',
     researchGate: '',
@@ -74,7 +74,7 @@ const CONFIG = {
     stackoverflow: '',
     skype: '',
     telegram: '',
-    website: 'https://robertoreale.github.io/',
+    website: 'https://robertoreale.github.io',
     phone: '',
     email: 'robertoreale2006@gmail.com',
   },
