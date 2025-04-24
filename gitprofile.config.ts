@@ -102,16 +102,16 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Liceo Scientifico Francesco Saverio Nitti',
-      degree: 'High School Diploma',
-      from: '2019',
-      to: '2024',
-    },
-    {
       institution: 'Politecnico di Milano',
       degree: 'Laurea triennale in Ingegneria Informatica',
       from: '2024',
       to: '2027',
+    },
+    {
+      institution: 'Liceo Scientifico Francesco Saverio Nitti',
+      degree: 'High School Diploma',
+      from: '2019',
+      to: '2024',
     },
   ],
   publications: [
