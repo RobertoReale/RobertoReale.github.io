@@ -90,6 +90,9 @@ const CONFIG = {
     'Git',
     'HTML',
     'JavaScript',
+    'LaTeX',
+    'Linux',
+    'MATLAB',
     'PHP',
     'Python',
     'Raspberry Pi'
