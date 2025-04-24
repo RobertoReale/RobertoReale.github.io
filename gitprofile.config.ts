@@ -83,20 +83,16 @@ const CONFIG = {
       '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
+    'Bash',
+    'C',
     'CSS',
-    'Antd',
-    'Tailwind',
+    'Docker',
+    'Git',
+    'HTML',
+    'JavaScript',
+    'PHP',
+    'Python',
+    'Raspberry Pi'
   ],
   certifications: [
     {
@@ -108,16 +104,16 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Liceo Scientifico Francesco Saverio Nitti',
+      degree: 'High School Diploma',
+      from: '2019',
+      to: '2024',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Politecnico di Milano',
+      degree: 'Laurea triennale in Ingegneria Informatica',
+      from: '2024',
+      to: '2027',
     },
   ],
   publications: [
@@ -143,7 +139,7 @@ const CONFIG = {
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'Roberto Reale', // to hide blog section, keep it empty
+    username: 'robertoreale', // to hide blog section, keep it empty
     limit: 2, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
