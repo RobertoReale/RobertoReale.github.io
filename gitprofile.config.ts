@@ -28,7 +28,29 @@ const CONFIG = {
         projects: ['', ''], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
-    external: {},
+    external: {
+      header: '',
+      // To hide the `External Projects` section, keep it empty.
+      projects: [
+        {
+          title: '',
+          description:
+            '',
+          imageUrl:
+            '',
+          link: '',
+        },
+        {
+          title: 'Project Name',
+          description:
+            '',
+          imageUrl:
+            '',
+          link: '',
+        },
+      ],
+    },
+  },
   seo: {
     title: 'Portfolio of Roberto Reale',
     description: '',
