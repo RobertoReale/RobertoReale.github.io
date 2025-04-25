@@ -63,7 +63,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://www.linkedin.com/ambry/?x-li-ambry-ep=AQLiHqHHdxMetgAAAZZpbbxrVG-hVM68oTbSXNWVnMGoQyCd__prgo89g5Bw5X5U3BVLFpB21agGIROFCtcd-5Zg3EMazVyqXSJKbFr0o118lwhCerDC0vc4FNKLe4ZJcntCUnLt7nONz2XUhHLujiiltW7vg5elE-X8F799D3atg4iFM8ylxvK_ps9pqTDvqNeHacHingpkNC_o4-FpJ9ZVwG4eDXRZK82mEZ3NW0lTyT5GwDVZlLYOuSD4ai-rbmaBATylw28OpdSGkO1xcBLULnVU2rveKUsa5c4sNitwGXX_rCCgVxcjkh1OShi_HtU3Cd3_FViC13xqIThM_3jTA0lUq8ls5t3FGWl7QZGCkoFBLTughwq7ucEPVCx9ACMK98rpj3Cims1X3AeOpzWQJumUaz7u2RoODhTjOZwM4_X04mdwz8Myh2-Hsz3ZFcE-XS9sjZtmypeASxZQR5JzIV3AijcEiSQEH1lkW8SDMMeZ0WDqN0kwPuZEzVpqNQtc7jF8CWkR3xNwO0-7JRijXAuC4PTK4yOY2H0rqBt7tZCfN1x8Y5J5ZzXmUY1uc7LyZjo&x-ambry-um-filename=Profile.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      'https://cv-redirector.reale2006.workers.dev', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Bash',
