@@ -63,7 +63,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://cv-redirector.reale2006.workers.dev', // Empty fileUrl will hide the `Download Resume` button.
+      'https://drive.usercontent.google.com/download?id=1aI2YBVHOrJQyfitqdoLD3_FnLPn6wPao&export=download&authuser=0', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Bash',
