@@ -109,7 +109,7 @@ const CONFIG = {
     },
     {
       institution: 'Liceo Scientifico Francesco Saverio Nitti',
-      degree: 'High School Diploma',
+      degree: 'High School Diploma (100/100)',
       from: '2019',
       to: '2024',
     },
