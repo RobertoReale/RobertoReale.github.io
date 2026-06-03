@@ -152,4 +152,5 @@ export interface SanitizedConfig {
   themeConfig: SanitizedThemeConfig;
   footer?: string;
   enablePWA: boolean;
+  bio?: string;
 }

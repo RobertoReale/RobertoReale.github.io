@@ -10,6 +10,7 @@ const CONFIG = {
    * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
    */
   base: '/',
+  bio: 'Computer Engineering student at Politecnico di Milano. I build tools for productivity, networking, and automation — from browser extensions to desktop apps.',
   projects: {
     github: {
       display: true, // Display GitHub projects?
@@ -103,7 +104,7 @@ const CONFIG = {
   educations: [
     {
       institution: 'Politecnico di Milano',
-      degree: 'Laurea triennale in Ingegneria Informatica',
+      degree: 'BSc in Computer Engineering',
       from: '2024',
       to: '2027',
     },

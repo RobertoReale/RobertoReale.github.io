@@ -8,6 +8,7 @@ interface AvatarCardProps {
   loading: boolean;
   avatarRing: boolean;
   resumeFileUrl?: string;
+  email?: string;
 }
 
 /**
@@ -23,6 +24,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
   loading,
   avatarRing,
   resumeFileUrl,
+  email,
 }): JSX.Element => {
   return (
     <div className="card shadow-lg compact bg-base-100">
@@ -92,6 +94,14 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
               Download Resume
             </a>
           ))}
+        {email && !loading && (
+          <a
+            href={`mailto:${email}`}
+            className="btn btn-outline btn-sm text-xs mt-3 opacity-50"
+          >
+            Get in touch
+          </a>
+        )}
       </div>
     </div>
   );

@@ -438,6 +438,11 @@ interface Config {
    * Enable PWA
    */
   enablePWA?: boolean;
+
+  /**
+   * Short bio shown in the profile card (overrides GitHub bio)
+   */
+  bio?: string;
 }
 
 declare const CONFIG: Config;
