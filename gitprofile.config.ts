@@ -137,9 +137,9 @@ const CONFIG = {
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'roberto_reale', // to hide blog section, keep it empty
-    limit: 1, // How many articles to display. Max is 10.
+    source: 'medium', // medium | dev
+    username: 'robertoreale', // to hide blog section, keep it empty
+    limit: 3, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: 'G-6HQ9BK2K1K', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
