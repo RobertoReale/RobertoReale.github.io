@@ -58,7 +58,7 @@ const CONFIG = {
     stackoverflow: '',
     skype: '',
     telegram: '',
-    website: 'https://robertoreale.github.io',
+    website: 'https://blog-roberto-reale.vercel.app',
     phone: '',
     email: 'robertoreale2006@gmail.com',
   },
