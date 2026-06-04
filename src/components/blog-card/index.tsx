@@ -133,19 +133,21 @@ const BlogCard = ({
         >
           <div className="p-8 h-full w-full">
             <div className="flex items-center flex-col md:flex-row">
-              <div className="avatar mb-5 md:mb-0 opacity-90">
-                <div className="w-24 h-24 mask mask-squircle">
-                  <LazyImage
-                    src={article.thumbnail}
-                    alt={'thumbnail'}
-                    placeholder={skeleton({
-                      widthCls: 'w-full',
-                      heightCls: 'h-full',
-                      shape: '',
-                    })}
-                  />
+              {article.thumbnail && (
+                <div className="avatar mb-5 md:mb-0 opacity-90">
+                  <div className="w-24 h-24 mask mask-squircle">
+                    <LazyImage
+                      src={article.thumbnail}
+                      alt={'thumbnail'}
+                      placeholder={skeleton({
+                        widthCls: 'w-full',
+                        heightCls: 'h-full',
+                        shape: '',
+                      })}
+                    />
+                  </div>
                 </div>
-              </div>
+              )}
               <div className="w-full">
                 <div className="flex items-start px-4">
                   <div className="text-center md:text-left w-full">
