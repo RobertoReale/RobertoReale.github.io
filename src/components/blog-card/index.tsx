@@ -31,6 +31,23 @@ const BlogCard = ({
       }).then((res) => {
         setArticles(res);
       });
+    } else if (blog.source === 'custom') {
+      fetch(`https://api.rss2json.com/v1/api.json?rss_url=${blog.username}`)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.items) {
+            const parsedArticles = data.items.map((item: any) => ({
+              title: item.title,
+              thumbnail: item.thumbnail || '',
+              link: item.link,
+              publishedAt: new Date(item.pubDate),
+              description: item.description || '',
+              categories: item.categories || [],
+            }));
+            setArticles(parsedArticles);
+          }
+        })
+        .catch((error) => console.error('Error fetching RSS feed', error));
     }
   }, [blog.source, blog.username]);
 

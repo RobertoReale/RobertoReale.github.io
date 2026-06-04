@@ -118,8 +118,8 @@ const CONFIG = {
   publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'medium', // medium | dev
-    username: 'robertoreale', // to hide blog section, keep it empty
+    source: 'custom', // medium | dev | custom
+    username: 'https://blog-roberto-reale.vercel.app/rss.xml', // to hide blog section, keep it empty
     limit: 3, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
