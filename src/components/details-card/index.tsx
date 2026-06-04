@@ -298,6 +298,20 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   link={`https://www.udemy.com/user/${social.udemy}`}
                 />
               )}
+              {social?.website && (
+                <ListItem
+                  icon={<FaGlobe />}
+                  title="Website:"
+                  value={social.website
+                    .replace('https://', '')
+                    .replace('http://', '')}
+                  link={
+                    !social.website.startsWith('http')
+                      ? `http://${social.website}`
+                      : social.website
+                  }
+                />
+              )}
               {social?.medium && (
                 <ListItem
                   icon={<AiFillMediumSquare />}
@@ -320,20 +334,6 @@ const DetailsCard = ({ profile, loading, social, github }: Props) => {
                   title="Stack Overflow:"
                   value={social.stackoverflow.split('/').slice(-1)}
                   link={`https://stackoverflow.com/users/${social.stackoverflow}`}
-                />
-              )}
-              {social?.website && (
-                <ListItem
-                  icon={<FaGlobe />}
-                  title="Website:"
-                  value={social.website
-                    .replace('https://', '')
-                    .replace('http://', '')}
-                  link={
-                    !social.website.startsWith('http')
-                      ? `http://${social.website}`
-                      : social.website
-                  }
                 />
               )}
               {social?.skype && (

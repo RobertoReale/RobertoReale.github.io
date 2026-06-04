@@ -115,26 +115,7 @@ const CONFIG = {
       to: '2024',
     },
   ],
-  publications: [
-    {
-      title: '',
-      conferenceName: '',
-      journalName: '',
-      authors: '',
-      link: '',
-      description:
-        '',
-    },
-    {
-      title: '',
-      conferenceName: '',
-      journalName: '',
-      authors: '',
-      link: '',
-      description:
-        '',
-    },
-  ],
+  publications: [],
   // Display articles from your medium or dev account. (Optional)
   blog: {
     source: 'medium', // medium | dev
