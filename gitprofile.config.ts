@@ -63,8 +63,7 @@ const CONFIG = {
     email: 'robertoreale2006@gmail.com',
   },
   resume: {
-    fileUrl:
-      'https://drive.usercontent.google.com/download?id=1N28ky7NrRG_6k2S4XAFhW6ByiMonzLCq&export=download&authuser=0&confirm=t&uuid=81946238-13c2-436a-8dc6-fb6debadf69b&at=APcmpozfQs3g83voPPC01IQkLFz0:1745574894191', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: '/cv.pdf',
   },
   skills: [
     'Bash',
