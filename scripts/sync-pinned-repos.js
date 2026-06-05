@@ -1,7 +1,8 @@
-#!/usr/bin/env node
-const fs = require('fs');
-const path = require('path');
+import { readFileSync, writeFileSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const token = process.env.GH_TOKEN;
 const username = 'RobertoReale';
 
@@ -46,8 +47,8 @@ async function main() {
 
   console.log('Pinned repos:', repos);
 
-  const configPath = path.join(__dirname, '..', 'gitprofile.config.ts');
-  let content = fs.readFileSync(configPath, 'utf8');
+  const configPath = join(__dirname, '..', 'gitprofile.config.ts');
+  let content = readFileSync(configPath, 'utf8');
 
   content = content.replace(/mode: ['"]automatic['"]/, "mode: 'manual'");
 
@@ -58,7 +59,7 @@ async function main() {
   const before = content.slice(0, manualIdx);
   const after = content.slice(manualIdx).replace(/projects: \[.*?\]/, `projects: [${reposList}]`);
 
-  fs.writeFileSync(configPath, before + after, 'utf8');
+  writeFileSync(configPath, before + after, 'utf8');
   console.log('Config updated successfully');
 }
 
