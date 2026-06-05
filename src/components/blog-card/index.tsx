@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LazyImage from '../lazy-image';
 import { AiOutlineContainer } from 'react-icons/ai';
 import { getDevPost, getMediumPost } from '@arifszn/blog-js';
@@ -22,13 +22,13 @@ const BlogCard = ({
     if (blog.source === 'medium') {
       getMediumPost({
         user: blog.username,
-      }).then((res) => {
+      }).then((res: Article[]) => {
         setArticles(res);
       });
     } else if (blog.source === 'dev') {
       getDevPost({
         user: blog.username,
-      }).then((res) => {
+      }).then((res: Article[]) => {
         setArticles(res);
       });
     } else if (blog.source === 'custom') {
@@ -110,12 +110,12 @@ const BlogCard = ({
 
   const renderArticles = () => {
     return articles && articles.length ? (
-      articles.slice(0, blog.limit).map((article, index) => (
+      articles.slice(0, blog.limit).map((article: Article, index: number) => (
         <a
           className="card shadow-lg compact bg-base-100 cursor-pointer"
           key={index}
           href={article.link}
-          onClick={(e) => {
+          onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
             e.preventDefault();
 
             try {
@@ -163,7 +163,7 @@ const BlogCard = ({
                       {article.description}
                     </p>
                     <div className="mt-4 flex items-center flex-wrap justify-center md:justify-start">
-                      {article.categories.map((category, index2) => (
+                      {article.categories.map((category: string, index2: number) => (
                         <div
                           className="py-2 px-4 text-xs leading-3 rounded-full bg-base-300 mr-1 mb-1 opacity-50 text-base-content"
                           key={index2}

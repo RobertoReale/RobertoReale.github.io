@@ -83,7 +83,13 @@ const GitProfile = ({ config }: { config: Config }) => {
         });
         const repoData = repoResponse.data;
 
-        return repoData.items;
+        const manualProjects = sanitizedConfig.projects.github.manual.projects;
+        return repoData.items.sort((a: GithubProject, b: GithubProject) => {
+          return (
+            manualProjects.indexOf(a.full_name) -
+            manualProjects.indexOf(b.full_name)
+          );
+        });
       }
     },
     [
