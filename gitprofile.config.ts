@@ -82,6 +82,12 @@ const CONFIG = {
   ],
   certifications: [
     {
+      name: 'Claude Code in Action',
+      body: 'Anthropic Education',
+      year: 'July 2026',
+      link: '/Claude_Code_in_Action.pdf',
+    },
+    {
       name: 'EF SET Certificate (C1 Advanced)',
       body: 'EF Standard English Test (EF SET)',
       year: 'January 2024',
@@ -130,7 +136,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'light',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
