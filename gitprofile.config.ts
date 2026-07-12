@@ -26,7 +26,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['RobertoReale/polimi-oracle-may-2026-', 'RobertoReale/YT-Transcript-Summarizer', 'RobertoReale/Voice-Message-Transcriber', 'RobertoReale/blog-builder', 'RobertoReale/LaTeX-Auto-Compiler', 'RobertoReale/WikiTrace'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['RobertoReale/polimi-oracle-may-2026-', 'RobertoReale/YT-Transcript-Summarizer', 'RobertoReale/Voice-Message-Transcriber', 'RobertoReale/blog-builder', 'RobertoReale/LaTeX-Auto-Compiler', 'RobertoReale/real-estate-search'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
