@@ -1,4 +1,4 @@
-name: Sync Pinned Repos
+name: Sync GitHub Data
 
 on:
   schedule:
@@ -24,6 +24,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/sync-pinned-repos.js
 
+      - name: Sync top languages (skills)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-skills.js
+
       - name: Commit and push if changed
         id: commit
         run: |
@@ -33,7 +38,7 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             git add gitprofile.config.ts
-            git commit -m "chore: sync pinned repos"
+            git commit -m "chore: sync github data (repos and skills)"
             git push
             echo "changed=true" >> $GITHUB_OUTPUT
           fi

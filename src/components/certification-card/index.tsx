@@ -20,8 +20,9 @@ const ListItem = ({
     ></div>
     <div className="my-0.5 text-xs">{year}</div>
     <div className="font-medium">
-      <a href={link} target="_blank" rel="noreferrer">
+      <a href={link} target="_blank" rel="noreferrer" download={link?.startsWith('/') ? true : undefined}>
         {name}
+        {link?.startsWith('/') && <span className="ml-1 opacity-60 text-[10px] uppercase">(Download)</span>}
       </a>
     </div>
     <h3 className="mb-4 font-normal">{body}</h3>
