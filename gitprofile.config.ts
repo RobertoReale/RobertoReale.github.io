@@ -66,19 +66,28 @@ const CONFIG = {
     fileUrl: '/cv.pdf',
   },
   skills: [
+    'Astro',
     'Bash',
+    'Batchfile',
     'C',
     'CSS',
     'Docker',
+    'Dockerfile',
     'Git',
     'HTML',
     'JavaScript',
     'LaTeX',
     'Linux',
+    'Mako',
     'MATLAB',
+    'MDX',
     'PHP',
+    'PowerShell',
     'Python',
-    'Raspberry Pi'
+    'Raspberry Pi',
+    'Shell',
+    'TeX',
+    'TypeScript'
   ],
   certifications: [
     {
